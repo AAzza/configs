@@ -6,15 +6,22 @@ set t_co=256
 
 " install NeoBundle
 " mkdir -p ~/.vim/bundle
-" git clone https://github.com/shougo/NeoBundle.vim " ~/.vim/bundle/NeoBundle.vim
+" git clone https://github.com/shougo/NeoBundle.vim  ~/.vim/bundle/NeoBundle.vim
 
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+set runtimepath+=~/.vim/bundle/NeoBundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'shougo/NeoBundle.vim'
-NeoBundle 'shougo/vimproc'
+" NeoBundle 'Shougo/vimproc.vim', {
+"           \ 'build' : {
+"           \     'windows' : 'make -f make_mingw32.mak',
+"           \     'cygwin' : 'make -f make_cygwin.mak',
+"           \     'mac' : 'make -f make_mac.mak',
+"           \     'unix' : 'make -f make_unix.mak',
+"           \    },
+"           \ }
 " consider 'tpope/vim-commentary'
-NeoBundle 'tcomment'
+NeoBundle 'tComment'
 NeoBundle 'tpope/vim-surround'
 " NeoBundle 'snipmate'
 NeoBundle 'shougo/vinarise.vim'
