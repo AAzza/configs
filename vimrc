@@ -41,11 +41,6 @@ NeoBundle 'mayansmoke'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'summerfruit256.vim'
-colorscheme desert
-set background=dark
-if has("gui_running")
-    colorscheme summerfruit256
-endif
 
 " ------------------------------------------------------------------
 
@@ -182,6 +177,12 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'ukrainian-enhanced.vim'
 
 call neobundle#end()
+
+colorscheme desert
+set background=dark
+if has("gui_running")
+    colorscheme summerfruit256
+endif
 
 " set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set keymap=russian-jcukenwin
