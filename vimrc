@@ -27,9 +27,6 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'glench/vim-jinja2-syntax'
 let g:pyflakes_use_quickfix = 0
 
-NeoBundle 'maxbrunsfeld/vim-yankstack'
-call yankstack#setup()
-
 " themes
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nielsmadan/harlequin'
