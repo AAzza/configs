@@ -139,8 +139,11 @@ autocmd bufread,bufnewfile *.mako set filetype=mako
 autocmd filetype mako set syntax=mako
 
 " js filetypes
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload': {'filetypes': ['javascript']}}
+NeoBundleLazy 'pangloss/vim-javascript', {'autoload': {'filetypes': ['javascript']}}
 autocmd filetype javascript setlocal sw=2 sts=2 et
+autocmd filetype html setlocal sw=2 sts=2 et
+NeoBundleLazy 'mxw/vim-jsx', {'autoload': {'filetypes': ['javascript']}}
+let g:jsx_ext_required = 0
 
 " for yaml files
 NeoBundleLazy 'avakhov/vim-yaml', {'autoload': {'filetypes': ['yaml']}}
