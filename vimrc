@@ -132,6 +132,7 @@ nmap <c-b> :CtrlPBuffer<cr>
 
 " syntastic
 NeoBundle 'scrooloose/syntastic'
+let g:syntastic_javascript_checkers = ['jsxhint']
 
 " for mako files
 NeoBundle 'mako.vim'
