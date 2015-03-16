@@ -159,6 +159,9 @@ NeoBundleLazy 'Yggdroot/indentLine', {'autoload': {'filetypes': ['python']}}
 " reST
 NeoBundle 'Rykka/riv.vim'
 
+" Golang
+NeoBundleLazy 'fatih/vim-go.git', {'autoload': {'filetypes': ['go']}}
+
 " Complete
 NeoBundle 'valloric/YouCompleteMe'
 let g:ycm_key_list_previous_completion=['<up>']
